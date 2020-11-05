@@ -27,6 +27,7 @@ class UserManager {
         return users.size
     }
     fun updateUser(user: UserModel) { // the username doesn't change
+        activeUser = user
         users[user.username] = user
     }
     fun registerUser(user: UserModel) {
